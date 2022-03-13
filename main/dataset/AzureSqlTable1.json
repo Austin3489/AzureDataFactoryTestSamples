@@ -1,0 +1,41 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PlayerNamesSQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Position",
+				"type": "varchar"
+			},
+			{
+				"name": "Height",
+				"type": "varchar"
+			},
+			{
+				"name": "Weight",
+				"type": "varchar"
+			},
+			{
+				"name": "Age",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PLAYERS"
+		}
+	}
+}
